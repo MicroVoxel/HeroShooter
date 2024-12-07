@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
 
                 gameOver.SetActive(true);
 
-                Invoke("ChangToOpeningState", 3f);
+                Invoke("ChangeToOpeningState", 3f);
 
                 break;
         }
@@ -75,8 +75,8 @@ public class GameManager : MonoBehaviour
         UpdateGMState();
     }
 
-    public void ChangToOpeningState()
+    public void ChangeToOpeningState()
     {
-        SetGMState(GameManagerState.Opening);
+        SetGMState(GameManagerState.Opening); 
     }
 }
