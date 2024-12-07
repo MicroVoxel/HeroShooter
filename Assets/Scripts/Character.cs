@@ -18,7 +18,7 @@ public abstract class Character : MonoBehaviour
         }
     }
 
-    protected virtual void Die()
+    protected void Die()
     {
         Destroy(gameObject);
     }
